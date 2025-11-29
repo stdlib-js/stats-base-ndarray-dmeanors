@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,17 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the arithmetic mean of a one-dimensional double-precision floating-point ndarray using ordinary recursive summation.
+* Computes the arithmetic mean of a one-dimensional double-precision floating-point ndarray using ordinary recursive summation.
 *
-* @module @stdlib/stats-base-ndarray-dmeanors
+* @param arrays - array-like object containing an input ndarray
+* @returns arithmetic mean
 *
 * @example
 * var Float64Array = require( '@stdlib/array-float64' );
 * var ndarray = require( '@stdlib/ndarray-base-ctor' );
-* var dmeanors = require( '@stdlib/stats-base-ndarray-dmeanors' );
 *
 * var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
 * var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -34,12 +38,9 @@
 * var v = dmeanors( [ x ] );
 * // returns 2.5
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function dmeanors( arrays: [ float64ndarray ] ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = dmeanors;

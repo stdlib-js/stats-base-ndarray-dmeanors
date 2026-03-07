@@ -2,6 +2,52 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-07)
+
+<section class="features">
+
+### Features
+
+-   [`fba382e`](https://github.com/stdlib-js/stdlib/commit/fba382ef458e3d4b63943f8e7b5e68794c38631f) - add C implementation for `stats/base/ndarray/dmeanors` [(#10312)](https://github.com/stdlib-js/stdlib/pull/10312)
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`fba382e`](https://github.com/stdlib-js/stdlib/commit/fba382ef458e3d4b63943f8e7b5e68794c38631f) - **feat:** add C implementation for `stats/base/ndarray/dmeanors` [(#10312)](https://github.com/stdlib-js/stdlib/pull/10312) _(by Bhargav Dabhade, Philipp Burckhardt, Sachin Pangal)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 3 people contributed to this release. Thank you to the following contributors:
+
+-   Bhargav Dabhade
+-   Philipp Burckhardt
+-   Sachin Pangal
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)

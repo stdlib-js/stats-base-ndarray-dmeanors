@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2026 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,25 +16,31 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STATS_BASE_NDARRAY_DMEANORS_H
-#define STDLIB_STATS_BASE_NDARRAY_DMEANORS_H
+// TypeScript Version: 4.1
 
-#include "stdlib/ndarray/ctor.h"
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the arithmetic mean of a one-dimensional double-precision floating-point ndarray using ordinary recursive summation.
+*
+* @param arrays - array-like object containing an input ndarray
+* @returns arithmetic mean
+*
+* @example
+* var Float64Array = require( '@stdlib/array-float64' );
+* var ndarray = require( '@stdlib/ndarray-base-ctor' );
+*
+* var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
+* var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+*
+* var v = dmeanors( [ x ] );
+* // returns 2.5
 */
-double stdlib_stats_dmeanors( const struct ndarray *arrays[] );
+declare function dmeanors( arrays: [ float64ndarray ] ): number;
 
-#ifdef __cplusplus
-}
-#endif
 
-#endif // !STDLIB_STATS_BASE_NDARRAY_DMEANORS_H
+// EXPORTS //
+
+export = dmeanors;

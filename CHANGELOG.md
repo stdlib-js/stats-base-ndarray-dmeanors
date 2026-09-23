@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-03)
+## Unreleased (2026-09-23)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`7856f37`](https://github.com/stdlib-js/stdlib/commit/7856f376f03f88ec07da988496a43d6fcafd4481) - **docs:** update descriptions and comments _(by Athan Reines)_
 -   [`dadabba`](https://github.com/stdlib-js/stdlib/commit/dadabba66e44060c40b231ebf1862aa0453e5285) - **chore:** resolve C compiler warnings _(by Athan Reines)_
 -   [`ddc2020`](https://github.com/stdlib-js/stdlib/commit/ddc2020894f672547e4101425bf5f609dcabf634) - **chore:** modernize examples and benchmarks _(by Athan Reines)_
 -   [`d02089a`](https://github.com/stdlib-js/stdlib/commit/d02089a716cf72e62eb60d54f909f0b439a05196) - **chore:** minor clean-up _(by Philipp Burckhardt)_
